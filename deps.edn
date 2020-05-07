@@ -1,0 +1,8 @@
+{:deps {thheller/shadow-cljs   {:mvn/version "2.8.83"}
+        hiccup                 {:mvn/version "2.0.0-alpha1"}
+        camel-snake-kebab      {:mvn/version "0.4.0"}}
+ :aliases {:cider {:extra-deps {cider/cider-nrepl {:mvn/version "0.22.4"}}
+                   :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
+           :shadow {:extra-paths ["example" "resources"]
+                    :main-opts ["-m" "shadow.cljs.devtools.cli"]}
+           :test {:extra-paths ["test"]}}}
