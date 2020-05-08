@@ -4,4 +4,9 @@
  {:example {:target :browser
             :output-dir "resources/public/js"
             :asset-path "/js"
-            :modules {:main {:entries [cljs-wc.demo]}}}}}
+            :modules {:main {:entries [cljs-wc.demo]}}}
+  :test {:target    :browser-test
+         :test-dir  "resources/public/js/test"
+         :ns-regexp "-test$"
+         :devtools  {:http-port 8021
+                     :http-root "resources/public/js/test"}}}}

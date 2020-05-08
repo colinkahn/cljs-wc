@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@github/task-lists-element": "^1.0.7",
+    "clipboard-copy-element": "^1.0.0",
     "incremental-dom": "^0.7.0"
   }
 }
